@@ -44,12 +44,12 @@ function renderContacts(contacts) {
       <button class="delete-btn">Delete</button>
     `;
 
-    // Expand/collapse on name click
+    // Expand/collapse the contacts card
     name.addEventListener("click", () => {
       details.style.display = details.style.display === "none" ? "block" : "none";
     });
 
-    // Edit contact
+    // Editing contacts
     details.querySelector(".edit-btn").addEventListener("click", () => {
       form.name.value = contact.name;
       form.email.value = contact.email;
@@ -60,7 +60,7 @@ function renderContacts(contacts) {
       form.querySelector("button").textContent = "Update Contact";
     });
 
-    // Delete contact
+    // Deleting contacts
     details.querySelector(".delete-btn").addEventListener("click", () => {
       fetch(`${BASE_URL}/${contact.id}`, { method: "DELETE" })
         .then(() => fetchContacts());
@@ -72,7 +72,7 @@ function renderContacts(contacts) {
   });
 }
 
-// Add or update contact
+// Adding/ updating contacts
 form.addEventListener("submit", e => {
   e.preventDefault();
 
