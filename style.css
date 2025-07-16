@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-
+/*body styling*/
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f5f7fa;
@@ -12,7 +12,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
-
+/*first main heading styling*/
 h1 {
   text-align: center;
   margin-bottom: 30px;
@@ -95,4 +95,40 @@ form button:hover {
 
 .delete-btn:hover {
   background: #c0392b;
+}
+/* Container that holds the contacts in 2 columns */
+#contacts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Two flexible columns */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+}
+
+/* Style for each individual contact card */
+.contact-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Make it look neat */
+.contact-card h3 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.contact-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.contact-card a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
 }
