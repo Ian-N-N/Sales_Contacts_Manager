@@ -1,65 +1,78 @@
 const BASE_URL = "http://localhost:3000/contacts";
 const contactsContainer = document.getElementById("contacts-container");
 const form = document.getElementById("contact-form");
+const toggleThemeBtn = document.getElementById("toggle-theme");
 
-// Fetch & display all contacts on page load
+let editingContactId = null;
+
 document.addEventListener("DOMContentLoaded", () => {
   fetchContacts();
 });
 
-// Fetch contacts from server
+// Toggle dark/light theme
+toggleThemeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
+
+// Fetch contacts
 function fetchContacts() {
   fetch(BASE_URL)
     .then(res => res.json())
     .then(renderContacts)
-    .catch(err => console.error("Error fetching contacts:", err));
+    .catch(err => console.error("Error:", err));
 }
 
-// Render each contact as a card
+// Render contacts with expandable details
 function renderContacts(contacts) {
-  contactsContainer.innerHTML = ""; // Clear container
+  contactsContainer.innerHTML = "";
   contacts.forEach(contact => {
     const card = document.createElement("div");
     card.classList.add("contact-card");
 
-    card.innerHTML = `
-      <h3>${contact.name}</h3>
+    const name = document.createElement("h3");
+    name.textContent = contact.name;
+
+    const details = document.createElement("div");
+    details.style.display = "none"; // Hidden by default
+
+    details.innerHTML = `
       <p>Email: ${contact.email}</p>
       <p>Phone: ${contact.phone}</p>
       <p>Company: ${contact.company}</p>
       <p>Website: <a href="${contact.website}" target="_blank">${contact.website}</a></p>
-      <button class="edit-btn" data-id="${contact.id}">Edit</button>
-      <button class="delete-btn" data-id="${contact.id}">Delete</button>
+      <button class="edit-btn">Edit</button>
+      <button class="delete-btn">Delete</button>
     `;
-    // Edit handler
-    card.querySelector(".edit-btn").addEventListener("click", () => {
-  populateFormForEdit(contact);
-});
-let editingContactId = null;
 
-function populateFormForEdit(contact) {
-  // Fill form fields with contact data
-  form.name.value = contact.name;
-  form.email.value = contact.email;
-  form.phone.value = contact.phone;
-  form.company.value = contact.company;
-  form.website.value = contact.website;
+    // Expand/collapse on name click
+    name.addEventListener("click", () => {
+      details.style.display = details.style.display === "none" ? "block" : "none";
+    });
 
-  editingContactId = contact.id;
+    // Edit contact
+    details.querySelector(".edit-btn").addEventListener("click", () => {
+      form.name.value = contact.name;
+      form.email.value = contact.email;
+      form.phone.value = contact.phone;
+      form.company.value = contact.company;
+      form.website.value = contact.website;
+      editingContactId = contact.id;
+      form.querySelector("button").textContent = "Update Contact";
+    });
 
-  // Change button text to indicate edit mode
-  form.querySelector("button").textContent = "Update Contact";
-}
-    // Delete handler
-    card.quContact(contact.id);
-    });erySelector(".delete-btn").addEventListener("click", () => {
-      delete
+    // Delete contact
+    details.querySelector(".delete-btn").addEventListener("click", () => {
+      fetch(`${BASE_URL}/${contact.id}`, { method: "DELETE" })
+        .then(() => fetchContacts());
+    });
 
+    card.appendChild(name);
+    card.appendChild(details);
     contactsContainer.appendChild(card);
   });
 }
 
-// Add new contact
+// Add or update contact
 form.addEventListener("submit", e => {
   e.preventDefault();
 
@@ -72,7 +85,6 @@ form.addEventListener("submit", e => {
   };
 
   if (editingContactId) {
-    // If editing, send PATCH
     fetch(`${BASE_URL}/${editingContactId}`, {
       method: "PATCH",
       headers: {
@@ -80,16 +92,13 @@ form.addEventListener("submit", e => {
       },
       body: JSON.stringify(contactData)
     })
-      .then(res => res.json())
       .then(() => {
         editingContactId = null;
         form.reset();
         form.querySelector("button").textContent = "Add Contact";
         fetchContacts();
-      })
-      .catch(err => console.error("Error updating contact:", err));
+      });
   } else {
-    // If adding new contact, POST
     fetch(BASE_URL, {
       method: "POST",
       headers: {
@@ -97,11 +106,9 @@ form.addEventListener("submit", e => {
       },
       body: JSON.stringify(contactData)
     })
-      .then(res => res.json())
       .then(() => {
         form.reset();
         fetchContacts();
-      })
-      .catch(err => console.error("Error adding contact:", err));
+      });
   }
 });
