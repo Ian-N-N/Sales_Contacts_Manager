@@ -1,7 +1,7 @@
-const BASE_URL = "http://localhost:3000/contacts";
-const contactsContainer = document.getElementById("contacts-container");
-const form = document.getElementById("contact-form");
-const toggleThemeBtn = document.getElementById("toggle-theme");
+const BASE_URL = "http://localhost:3000/contacts";//used in fetch() calls to get, add, delete or update contact data
+const contactsContainer = document.getElementById("contacts-container");//Grabs the DOM element where the contacts will be displayed
+const form = document.getElementById("contact-form");//selects the html form which will be used to add or update contacts
+const toggleThemeBtn = document.getElementById("toggle-theme");//gets the button that prompts the theme color to change from light to dark
 const showContactsBtn = document.getElementById("show-contacts-btn");
 const submitBtn = document.getElementById("submit-btn");
 const searchInput = document.getElementById("search");

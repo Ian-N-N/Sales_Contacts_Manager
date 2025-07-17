@@ -2,34 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Sales Contacts Manager</title>
+  <title>Sales Contacts Manager</title><!--title of the web application-->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <button id="toggle-theme">Theme</button>
-  <h1>Sales Contacts Manager</h1>
+  <h1>Sales Contacts Manager</h1><!--heading of the web application-->
 
   <div class="controls">
     <input type="text" id="search" placeholder="Search contacts..." />
     <select id="sort">
-      <option value="name">Sort by Name (A-Z)</option>
-      <option value="date">Sort by Date Added</option>
+      <option value="name">Sort by Name (A-Z)</option><!--sorting the lists in alphabetical order-->
+      <option value="date">Sort by Date Added</option><!--sorting the lists by when the contact was added-->
     </select>
-    <button id="show-contacts-btn">Show Contacts</button>
+    <button id="show-contacts-btn">Show Contacts</button><!--button showing the list of contacts saved in the server-->
   </div>
 
-  <form id="contact-form">
+  <form id="contact-form"><!--form which user can use to add contacts-->
     <input type="text" id="name" placeholder="Name" required />
     <input type="email" id="email" placeholder="Email" required />
     <input type="tel" id="phone" placeholder="Phone" required />
     <input type="text" id="company" placeholder="Company" required />
     <input type="url" id="website" placeholder="Website" required />
-    <!--<input type="text" id="image" placeholder="Image Path (local or URL)" />-->
     <button type="submit" id="submit-btn">Add Contact</button>
   </form>
 
-  <div id="contacts-container" class="hidden"></div>
-  <div id="toast" class="toast hidden"></div>
+  <div id="contacts-container" class="hidden"></div><!--contact list container-->
+  <div id="toast" class="toast hidden"></div><!--toast is for pop up messages-->
 
   <script src="script.js"></script>
 </body>
