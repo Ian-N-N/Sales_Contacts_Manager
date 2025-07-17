@@ -89,6 +89,26 @@
       "website": "https://www.extra.co.ke",
       "favorite": false,
       "createdAt": "2025-07-17T12:00:00Z"
+    },
+    {
+      "id": "ca11",
+      "name": "John Doe",
+      "email": "Doe@sample.com",
+      "phone": "0123456789",
+      "company": "ABC LTD",
+      "website": "https://sample.co.ke",
+      "favorite": false,
+      "createdAt": "2025-07-17T12:01:39.100Z"
+    },
+    {
+      "id": "4fee",
+      "name": "brian muena",
+      "email": "b@sample.com",
+      "phone": "0286538725",
+      "company": "ABC LTD",
+      "website": "https://sample.co.ke",
+      "favorite": false,
+      "createdAt": "2025-07-17T12:02:08.250Z"
     }
   ]
 }

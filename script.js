@@ -127,6 +127,9 @@ function handleSubmit(e){
     fetch(BASE_URL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)})
       .then(()=>showToast("Added"))
       .then(loadContacts);
+      form.reset();                      // Clears the input fields
+      submitBtn.textContent = "Add Contact"; // Resets the button label
+      editingContactId = null;          // Make sure you're no longer in edit mode
   }
 }
 
