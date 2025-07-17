@@ -51,7 +51,7 @@ form {
 }
 
 form input {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin-bottom: 14px;
   border: 1px solid #ccc;
@@ -60,7 +60,7 @@ form input {
 }
 
 form button {
-  width: 100%;
+  width: 20%;
   padding: 12px;
   background: #007bff;
   color: white;
