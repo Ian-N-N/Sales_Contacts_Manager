@@ -6,11 +6,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <button id="toggle-theme">🌙 Toggle Theme</button>
+  <button id="toggle-theme">🌙 Theme</button>
   <h1>Sales Contacts Manager</h1>
 
-  <div class="actions">
-    <button id="show-contacts-btn">Show All Contacts</button>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search contacts..." />
+    <select id="sort">
+      <option value="name">Sort by Name (A-Z)</option>
+      <option value="date">Sort by Date Added</option>
+    </select>
+    <button id="show-contacts-btn">Show Contacts</button>
   </div>
 
   <form id="contact-form">
@@ -19,11 +24,12 @@
     <input type="tel" id="phone" placeholder="Phone" required />
     <input type="text" id="company" placeholder="Company" required />
     <input type="url" id="website" placeholder="Website" required />
-    <input type="text" id="image" placeholder="Image Path (e.g. images/john.jpg)" />
+    <input type="text" id="image" placeholder="Image Path (local or URL)" />
     <button type="submit" id="submit-btn">Add Contact</button>
   </form>
 
   <div id="contacts-container" class="hidden"></div>
+  <div id="toast" class="toast hidden"></div>
 
   <script src="script.js"></script>
 </body>
