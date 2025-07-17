@@ -60,10 +60,6 @@ function createCard(c){
   fav.textContent = c.favorite ? "★" : "☆";
   fav.addEventListener("click", ()=>toggleFavorite(c));
 
-  //const img = document.createElement("img");
-  //if(c.image) img.src = c.image;
-  //else img.alt = c.name[0];
-
   const name = document.createElement("h3");
   name.textContent = c.name;
 
