@@ -116,7 +116,6 @@ function handleSubmit(e){
     phone: form.phone.value.trim(),
     company: form.company.value.trim(),
     website: form.website.value.trim(),
-    image: form.image.value.trim(),
     favorite: false,
     createdAt: new Date().toISOString()
   };
