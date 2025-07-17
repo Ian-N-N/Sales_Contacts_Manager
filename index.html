@@ -9,16 +9,21 @@
   <button id="toggle-theme">🌙 Toggle Theme</button>
   <h1>Sales Contacts Manager</h1>
 
+  <div class="actions">
+    <button id="show-contacts-btn">Show All Contacts</button>
+  </div>
+
   <form id="contact-form">
     <input type="text" id="name" placeholder="Name" required />
     <input type="email" id="email" placeholder="Email" required />
     <input type="tel" id="phone" placeholder="Phone" required />
     <input type="text" id="company" placeholder="Company" required />
     <input type="url" id="website" placeholder="Website" required />
-    <button type="submit">Add Contact</button>
+    <input type="text" id="image" placeholder="Image Path (e.g. images/john.jpg)" />
+    <button type="submit" id="submit-btn">Add Contact</button>
   </form>
 
-  <div id="contacts-container"></div>
+  <div id="contacts-container" class="hidden"></div>
 
   <script src="script.js"></script>
 </body>
