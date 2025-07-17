@@ -70,12 +70,12 @@ function createCard(c){
   const details = document.createElement("div");
   details.style.display = "none";
   details.innerHTML = `
-    <p><a href="mailto:${c.email}">${c.email}</a></p>
-    <p><a href="tel:${c.phone}">${c.phone}</a></p>
-    <p>${c.company}</p>
-    <p><a href="${c.website}" target="_blank">${c.website}</a></p>
-    <button class="edit-btn">Edit</button>
-    <button class="delete-btn">Delete</button>
+  <p><strong>Email:</strong> <a href="mailto:${c.email}">${c.email}</a></p>
+  <p><strong>Phone:</strong> <a href="tel:${c.phone}">${c.phone}</a></p>
+  <p><strong>Company:</strong> ${c.company}</p>
+  <p><strong>Website:</strong> <a href="${c.website}" target="_blank">${c.website}</a></p>
+  <button class="edit-btn">Edit</button>
+  <button class="delete-btn">Delete</button>
   `;
 
   name.addEventListener("click", ()=>details.style.display = details.style.display==="none"?"block":"none");

@@ -144,3 +144,8 @@ body.dark .contact-card {
   display:none; 
   opacity:0; 
 }
+/*making contacts lables bold*/
+.contact-card p strong {
+  display: inline-block;
+  min-width: 75px;
+}
