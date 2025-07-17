@@ -7,7 +7,7 @@
       "phone": "0710125246",
       "company": "Zaruri Ventures Limited",
       "website": "https://zaruri.co.ke",
-      "favorite": true,
+      "favorite": false,
       "createdAt": "2025-07-17T12:00:00Z"
     },
     {
@@ -77,7 +77,7 @@
       "phone": "0756789012",
       "company": "Zaruri Ventures Limited",
       "website": "https://zaruri.co.ke",
-      "favorite": true,
+      "favorite": false,
       "createdAt": "2025-07-17T12:00:00Z"
     },
     {

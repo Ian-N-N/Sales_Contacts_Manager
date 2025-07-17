@@ -82,7 +82,7 @@ function createCard(c){
   details.querySelector(".edit-btn").addEventListener("click", ()=>populateForm(c));
   details.querySelector(".delete-btn").addEventListener("click", ()=>deleteContact(c.id));
 
-  card.append(fav,img,name,details);
+  card.append(fav,name,details);
   return card;
 }
 
@@ -101,7 +101,6 @@ function populateForm(c){
   form.phone.value=c.phone;
   form.company.value=c.company;
   form.website.value=c.website;
-  form.image.value=c.image||"";
   editingContactId=c.id;
   submitBtn.textContent="Update Contact";
 }
