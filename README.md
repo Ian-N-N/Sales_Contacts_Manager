@@ -14,6 +14,21 @@
 -  **Responsive Layout**: Fully responsive and visually appealing modern UI using CSS Grid.
 -  **Asynchronous API**: Uses `fetch()` and `json-server` to interact with the backend without page reloads.
 
+##  Getting Started (Local Development)
+
+### Prerequisites:
+- [Node.js](https://nodejs.org/) installed
+- `json-server` installed globally or locally
+
+## Project Structure
+```text
+sales-contacts-manager/
+ db.json
+ index.html
+ style.css
+ script.js
+ README.md
+```
 ##  Project Setup instructions
 ### 1.  Clone the Repository
 ``` bash
@@ -36,13 +51,3 @@ Ensure you are in the correct directory in your terminal then enter the code bel
 explorer.exe index.html
 ```
 
-##  Getting Started (Local Development)
-
-### Prerequisites:
-- [Node.js](https://nodejs.org/) installed
-- `json-server` installed globally or locally
-
-### 1. Clone the project:
-```bash
-git clone https://github.com/your-username/sales-contacts-manager.git
-cd sales-contacts-manager
