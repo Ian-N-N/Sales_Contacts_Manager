@@ -120,7 +120,7 @@ function handleSubmit(e){
     createdAt: new Date().toISOString()//creating new javascript date object with current date and time in strring format(ISO 8601)
   };
   if(editingContactId){
-    fetch(`${BASE_URL}/${editingContactId}`,{method:"PATCH",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)})
+    fetch(`${BASE_URL}/${editingContactId}`,{method:"PATCH",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)})//sending PATCH request to existing contact(partially update)
       .then(()=>showToast("Updated"))
       .then(()=>{editingContactId=null;form.reset();submitBtn.textContent="Add Contact";loadContacts();});
   } else {
