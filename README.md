@@ -3,7 +3,6 @@
 > A modern, single-page **Sales Contacts Manager** built using HTML, CSS, and JavaScript, connected to a `json-server` backend for data storage and retrieval. The app allows users to **add, view, edit, and delete sales contacts** seamlessly, all in one place, without reloading the page.
 
 
-
 ##  Features
 
 -  **View Contacts**: All contacts can be loaded and viewed in a responsive 3-column card layout.
@@ -15,10 +14,11 @@
 -  **Responsive Layout**: Fully responsive and visually appealing modern UI using CSS Grid.
 -  **Asynchronous API**: Uses `fetch()` and `json-server` to interact with the backend without page reloads.
 
----
-
-##  Project Structure
-
+##  Project Setup instructions
+### 1.  Clone the Repository
+```bash
+git clone https://github.com/Ian-N-N/Sales_Contacts_Manager.git
+cd Sales_Contacts_Manager 
 
 ##  Getting Started (Local Development)
 
