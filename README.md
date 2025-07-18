@@ -17,7 +17,7 @@
 ##  Getting Started (Local Development)
 
 ### Prerequisites:
-- [Node.js](https://nodejs.org/) installed
+- [Node.js](https://nodejs.org/) installed<!--the node.js will be a link that redirects you to node website where you can downloade node.js if you dont have it-->
 - `json-server` installed globally or locally
 
 ## Project Structure

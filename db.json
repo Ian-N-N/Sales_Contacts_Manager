@@ -36,7 +36,7 @@
       "email": "david@example.com",
       "phone": "0745678901",
       "company": "Zaruri Ventures Limited",
-      "website": "https://zaruri.co.ke",
+      "website": "https://web.co.ke",
       "favorite": false,
       "createdAt": "2025-07-17T12:00:00Z"
     },
@@ -46,7 +46,7 @@
       "email": "eva@example.com",
       "phone": "0756789012",
       "company": "Zaruri Ventures Limited",
-      "website": "https://zaruri.co.ke",
+      "website": "https://1532.co.ke",
       "favorite": false,
       "createdAt": "2025-07-17T12:00:00Z"
     },
@@ -62,23 +62,23 @@
     },
     {
       "id": "7",
-      "name": "Eva Green",
-      "email": "eva@example.com",
+      "name": "Moont Green",
+      "email": "mont@example.com",
       "phone": "0756789012",
-      "company": "Zaruri Ventures Limited",
-      "website": "https://zaruri.co.ke",
+      "company": "Ventures Limited",
+      "website": "https://ventures.co.ke",
       "favorite": false,
       "createdAt": "2025-07-17T12:00:00Z"
     },
     {
       "id": "8",
-      "name": "Eva Green",
-      "email": "eva@example.com",
+      "name": "Evans Wembly",
+      "email": "evans@example.com",
       "phone": "0756789012",
-      "company": "Zaruri Ventures Limited",
-      "website": "https://zaruri.co.ke",
+      "company": "ZV Limited",
+      "website": "https://zv.com",
       "favorite": false,
-      "createdAt": "2025-07-17T12:00:00Z"
+      "createdAt": "2025-07-18T12:00:00Z"
     },
     {
       "id": "d5b0",
@@ -88,7 +88,7 @@
       "company": "Ventures LTD",
       "website": "https://www.extra.co.ke",
       "favorite": false,
-      "createdAt": "2025-07-17T12:00:00Z"
+      "createdAt": "2025-07-16T12:00:00Z"
     },
     {
       "id": "ca11",
