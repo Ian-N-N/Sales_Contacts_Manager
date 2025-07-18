@@ -57,7 +57,7 @@
       "phone": "0756789012",
       "company": "Agro Fest LTD",
       "website": "https://afl.co.ke",
-      "favorite": false,
+      "favorite": true,
       "createdAt": "2025-07-17T12:00:00Z"
     },
     {
@@ -67,7 +67,7 @@
       "phone": "0756789012",
       "company": "Ventures Limited",
       "website": "https://ventures.co.ke",
-      "favorite": false,
+      "favorite": true,
       "createdAt": "2025-07-17T12:00:00Z"
     },
     {

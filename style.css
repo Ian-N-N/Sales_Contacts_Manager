@@ -52,14 +52,14 @@ form {
   margin-bottom:30px; 
 }
 form input { 
-  width:100%; 
+  width:98%; 
   padding:10px; 
   margin-bottom:14px; 
   border:1px solid #ccc; 
   border-radius:8px; 
 }
 form button { 
-  width:100%; 
+  width:20%; 
   padding:12px; 
   background:#007bff; 
   color:white; 
