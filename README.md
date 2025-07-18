@@ -16,9 +16,10 @@
 
 ##  Project Setup instructions
 ### 1.  Clone the Repository
-```bash
+``` bash
 git clone https://github.com/Ian-N-N/Sales_Contacts_Manager.git
 cd Sales_Contacts_Manager 
+``` 
 
 ##  Getting Started (Local Development)
 
