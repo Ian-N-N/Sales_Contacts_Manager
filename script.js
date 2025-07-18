@@ -20,14 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
   sortSelect.addEventListener("change", renderContacts);
 });
 
-// Toggle light/dark theme with persistence
+// Toggle light/dark theme 
 function toggleTheme() {
   document.body.classList.toggle("dark");
   localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
 }
 if (localStorage.getItem("theme")==="dark") document.body.classList.add("dark");
 
-// Load contacts from server
+// Load contacts from db.json server
 function loadContacts() {
   fetch(BASE_URL)
     .then(r=>r.json())
@@ -38,7 +38,7 @@ function loadContacts() {
     });
 }
 
-// Render cards with filtering, sorting
+// Render cards with filtering and sorting
 function renderContacts() {
   const term = searchInput.value.toLowerCase();
   let list = contactsData.filter(c=>c.name.toLowerCase().includes(term) || c.company.toLowerCase().includes(term));
@@ -50,7 +50,7 @@ function renderContacts() {
   list.forEach(c=>contactsContainer.appendChild(createCard(c)));
 }
 
-// Build a contact card element
+// Building a contact card element
 function createCard(c){
   const card = document.createElement("div");
   card.className = "contact-card";
@@ -82,7 +82,7 @@ function createCard(c){
   return card;
 }
 
-// Toggle favorite
+// marking a card as favourite
 function toggleFavorite(c){
   c.favorite = !c.favorite;
   fetch(`${BASE_URL}/${c.id}`,{method:"PATCH",headers:{"Content-Type":"application/json"},body:JSON.stringify({favorite:c.favorite})})
@@ -90,7 +90,7 @@ function toggleFavorite(c){
   renderContacts();
 }
 
-// Populate form for edit
+// function to allow editing of the contact cards
 function populateForm(c){
   form.name.value=c.name;
   form.email.value=c.email;
@@ -101,7 +101,7 @@ function populateForm(c){
   submitBtn.textContent="Update Contact";
 }
 
-// Delete contact
+// Deleting contacts from the web application and also from the server
 function deleteContact(id){
   fetch(`${BASE_URL}/${id}`,{method:"DELETE"})
     .then(()=>{ contactsData = contactsData.filter(c=>c.id!==id); renderContacts(); showToast("Deleted"); });
@@ -117,7 +117,7 @@ function handleSubmit(e){
     company: form.company.value.trim(),
     website: form.website.value.trim(),
     favorite: false,
-    createdAt: new Date().toISOString()
+    createdAt: new Date().toISOString()//creating new javascript date object with current date and time in strring format(ISO 8601)
   };
   if(editingContactId){
     fetch(`${BASE_URL}/${editingContactId}`,{method:"PATCH",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)})
