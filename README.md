@@ -20,6 +20,21 @@
 git clone https://github.com/Ian-N-N/Sales_Contacts_Manager.git
 cd Sales_Contacts_Manager 
 ``` 
+### 2. Install JSON server(if not installed already)
+```bash
+npm install -g json-server
+```
+
+### 3. Run the server
+```bash
+json-server --watch db.json
+```
+
+### 4. Open the Web application
+Ensure you are in the correct directory in your terminal then enter the code below:
+```bash
+explorer.exe index.html
+```
 
 ##  Getting Started (Local Development)
 
