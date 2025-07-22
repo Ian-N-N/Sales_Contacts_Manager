@@ -1,163 +1,223 @@
-/* Base Styles */
-body { 
+body {
   font-family: 'Segoe UI', sans-serif;
-  background: #f0f2f5; 
-  color: #333; 
-  padding: 40px; 
-  max-width: 1000px; 
-  margin: auto; 
-  transition: background 0.3s, color 0.3s; 
-}
-body.dark { 
-  background: #1e1e1e; 
-  color: #ddd; 
-}
-#toggle-theme { 
-  float: right; 
-  padding:8px 14px; 
-  background:#007bff; 
-  color:white; 
-  border:none; 
-  border-radius:6px; 
-  cursor:pointer; 
-}
-h1 { 
-  text-align:center; 
-  margin-bottom:20px; 
-}
-.controls { 
-  display:flex; 
-  gap:10px; 
-  margin-bottom:20px; 
-}
-/* Header Controls */
-.controls input, .controls select, .controls button { 
-  padding:8px; 
-  flex:1; 
-  border:1px solid #ccc; 
-  border-radius:6px; 
-}
-.controls button { 
-  background:#28a745; 
-  color:white; 
-  border:none; 
-  cursor:pointer; 
-}
-/* Form */
-form { 
-  background:white; 
-  padding:20px; 
-  border-radius:10px; 
-  box-shadow:0 3px 10px rgba(0,0,0,0.08); 
-  margin-bottom:30px; 
-}
-form input { 
-  width:98%; 
-  padding:10px; 
-  margin-bottom:14px; 
-  border:1px solid #ccc; 
-  border-radius:8px; 
-}
-form button { 
-  width:20%; 
-  padding:12px; 
-  background:#007bff; 
-  color:white; 
-  border:none; 
-  border-radius:8px; 
-  cursor:pointer; 
-  font-weight:bold; 
-}
-/* Grid Cards */
-#contacts-container { 
-  display:grid; 
-  grid-template-columns:repeat(auto-fill, minmax(250px, 1fr)); 
-  gap:20px; 
+  background: #f5f7fa;
+  color: #333;
+  padding: 40px;
+  max-width: 960px;
+  margin: auto;
+  transition: background 0.3s, color 0.3s;
 }
 
-.hidden { 
-  display:none; 
+body.dark {
+  background: #1f1f1f;
+  color: #eee;
 }
+
+h1 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+}
+
+/* Theme Toggle Button */
+#toggle-theme {
+  float: right;
+  padding: 8px 14px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#toggle-theme:hover {
+  background: #0056b3;
+}
+
+/* Controls Bar */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.controls input,
+.controls select,
+.controls button {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.controls button {
+  background: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controls button:hover {
+  background: #218838;
+}
+
+/* Form Styling */
+form {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  margin-bottom: 30px;
+}
+
+body.dark form {
+  background: #2a2a2a;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+/* Contact Grid */
+#contacts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
 /* Card Style */
-.contact-card { 
-  background: white; 
-  padding: 15px; 
-  border-radius: 12px; 
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
-  text-align: left; /* Align all text inside to the left */
-  position: relative; 
-  gap: 8px;
-  margin: 4px 0;
+.contact-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: scale(1.015);
+}
+
+body.dark .contact-card {
+  background: #2f2f2f;
+}
+
+.contact-card h3 {
+  margin: 10px 0;
+  font-size: 1.3em;
+  color: #007bff;
+  cursor: pointer;
 }
 
 .contact-card p {
-  margin: 4px 0;
+  margin: 8px 0;
+  font-size: 0.95em;
 }
 
 .contact-card p strong {
-  min-width: 80px;           /* Controls label alignment width */
-  display: inline-block;     /* Allows label width control */
-  text-align: left;          /* Aligns label text to the left */
-}
-body.dark .contact-card { 
-  background:#2c2c2c; 
-}
-.contact-card img { 
-  width:80px; 
-  height:80px; 
-  border-radius:50%; 
-  object-fit:cover; 
-  margin:10px auto; 
-}
-.contact-card h3 { 
-  cursor:pointer; 
-  color:#007bff; 
-  margin:10px 0; 
-}
-.contact-card p { 
-  margin:6px 0; 
-}
-.contact-card button { 
-  margin:8px 4px; 
-  padding:6px 12px; 
-  border-radius:6px; 
-  border:none; 
-  cursor:pointer; 
-  font-size:13px; 
-}
-.delete-btn { 
-  background:#dc3545; 
-  color:white; 
-}
-.edit-btn { 
-  background:#ffc107; 
-  color:#000; 
-}
-.favorite-btn { 
-  background:#ffdf00; 
-  color:#000; 
-  position:absolute; 
-  top:10px; 
-  right:10px; 
-  border-radius:50%; 
-}
-/* Toast */
-.toast { 
-  position:fixed; 
-  bottom:20px; 
-  right:20px; 
-  background:#323232; 
-  color:white; 
-  padding:12px 20px; 
-  border-radius:6px; 
-  box-shadow:0 2px 4px rgba(0,0,0,0.3); 
-}
-.toast.hidden { 
-  display:none; 
-  opacity:0; 
-}
-/*making contacts lables bold*/
-.contact-card p strong {
   display: inline-block;
-  min-width: 75px;
+  min-width: 85px;
+  color: #555;
+}
+
+.contact-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* Card Buttons */
+.contact-card button {
+  margin: 6px 6px 0 0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.85em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #bd2130;
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: #212529;
+}
+
+.edit-btn:hover {
+  background: #e0a800;
+}
+
+.favorite-btn {
+  background: #ffdf00;
+  color: #000;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  padding: 6px 10px;
+  font-size: 1.1em;
+}
+
+.favorite-btn:hover {
+  background: #ffd700;
+}
+
+/* Toast Notification */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #323232;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  transition: opacity 0.4s;
+}
+
+.toast.hidden {
+  display: none;
+  opacity: 0;
 }
