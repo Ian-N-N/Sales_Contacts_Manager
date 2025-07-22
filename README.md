@@ -53,3 +53,5 @@ explorer.exe index.html
 ## Live Demo
 [View the Live Site](https://ian-n-n.github.io/Sales_Contacts_Manager/)
 
+## Auhtor
+Ian Ngoru Njuguna
