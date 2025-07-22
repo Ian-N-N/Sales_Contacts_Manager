@@ -83,7 +83,7 @@ body.dark form {
 }
 
 form input {
-  width: 100%;
+  width: 90%;
   padding: 12px;
   margin-bottom: 16px;
   border: 1px solid #ccc;
@@ -92,7 +92,7 @@ form input {
 }
 
 form button {
-  width: 100%;
+  width: 50%;
   padding: 12px;
   background: #007bff;
   color: white;
