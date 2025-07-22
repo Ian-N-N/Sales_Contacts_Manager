@@ -1,6 +1,9 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #e3aa37;
+  background-image: url("https://paulmason.name/media/demos/full-screen-background-image/background.jpg"); /* Path to your image */
+  background-size: cover;        /* Scales image to cover the entire background */
+  background-position: center;   /* Centers the image */
+  background-repeat: no-repeat; 
   color: #333;
   padding: 40px;
   max-width: 960px;
