@@ -75,10 +75,10 @@ text-align: center;
 
 /* Form Styling */
 form {
-  background: white;
+  background: rgba(0,0,0,0.6);
   padding: 24px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   margin-bottom: 30px;
 }
 
