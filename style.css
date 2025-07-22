@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #1466a5;
+  background-color: #e3aa37;
   color: #333;
   padding: 40px;
   max-width: 960px;
@@ -17,6 +17,7 @@ h1 {
   text-align: center;
   font-size: 2.2em;
   margin-bottom: 30px;
+  color: #eee;
 }
 
 /* Theme Toggle Button */
