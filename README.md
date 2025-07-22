@@ -1,18 +1,17 @@
 #  Sales Contacts Manager Web Application
 
-> A modern, single-page **Sales Contacts Manager** built using HTML, CSS, and JavaScript, connected to a `json-server` backend for data storage and retrieval. The app allows users to **add, view, edit, and delete sales contacts** seamlessly, all in one place, without reloading the page.
+> A modern, single-page **Sales Contacts Manager** built using HTML, CSS, and JavaScript, connected to a `json-server` backend for data storage and retrieval. The app allows users to **add, view, edit, and delete sales contacts** seamlessly, all in one place, without reloading the page. Fromt he page, one is also able to change the background image displayed using the `theme` button 
 
 
 ##  Features
 
--  **View Contacts**: All contacts can be loaded and viewed in a responsive 3-column card layout.
+-  **Show Contacts**: All contacts can be loaded and viewed in a responsive 3-column card layout.
 -  **Add Contact**: A user-friendly form to add new contacts.
--  **Edit Contact**: Modify an existing contact's information using an intuitive form interface.
+-  **Edit Contact**: Modify an existing contact's information.
 -  **Delete Contact**: Remove a contact from the database.
--  **Dark/Light Mode**: Toggle between dark and light themes for comfortable viewing.
--  **Contact Images**: Each contact has a circular image (can be replaced with real local image paths).
+-  **Theme Mode**: Toggle between two images.
 -  **Responsive Layout**: Fully responsive and visually appealing modern UI using CSS Grid.
--  **Asynchronous API**: Uses `fetch()` and `json-server` to interact with the backend without page reloads.
+-  **Asynchronous API**: Uses `fetch()` and `json-server` to interact with the backend without page reloads. 
 
 ##  Getting Started (Local Development)
 
@@ -50,7 +49,8 @@ Ensure you are in the correct directory in your terminal then enter the code bel
 ```bash
 explorer.exe index.html
 ```
-## Live Demo
+## Live Demo\
+For the live demo, one can just click on the link provided below:
 [View the Live Site](https://ian-n-n.github.io/Sales_Contacts_Manager/)
 
 ## Auhtor
