@@ -50,4 +50,6 @@ Ensure you are in the correct directory in your terminal then enter the code bel
 ```bash
 explorer.exe index.html
 ```
+## Live Demo
+[View the Live Site](https://ian-n-n.github.io/Sales_Contacts_Manager/)
 
