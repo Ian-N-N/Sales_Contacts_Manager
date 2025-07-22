@@ -21,10 +21,7 @@ h1 {
   margin-bottom: 30px;
   color: #2b5882;
 }
-h1.dark {
-text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 30px;
+body.dark h1 {
   color: #ffffff;
 }
 /* Theme Toggle Button */
@@ -126,7 +123,7 @@ form button:hover {
 
 /* Card Style */
 .contact-card {
-  background: white;
+  background: rgb(255, 255, 255,0.6);
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
@@ -153,7 +150,7 @@ form button:hover {
 }
 
 body.dark .contact-card {
-  background: #97c9b6;
+  background: #97c9b6,0.6;
 }
 
 .contact-card h3 {
