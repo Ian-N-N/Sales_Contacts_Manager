@@ -6,8 +6,8 @@ body {
   background-repeat: no-repeat; 
   color: #333;
   padding: 40px;
-  margin: 0;
-  max-width: none;
+  max-width: 660px;
+  margin: auto;
   transition: background 0.3s, color 0.3s;
 }
 
