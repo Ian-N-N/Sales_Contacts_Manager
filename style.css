@@ -15,14 +15,18 @@ body.dark {
   background-image:url("https://png.pngtree.com/background/20230625/original/pngtree-nocturnal-metropolis-futuristic-cubist-cityscape-in-3d-render-picture-image_4053471.jpg");
   color: #eee;
 }
-
 h1 {
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 30px;
   color: #2b5882;
 }
-
+h1.dark {
+text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
 /* Theme Toggle Button */
 #toggle-theme {
   float: right;
