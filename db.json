@@ -7,6 +7,7 @@
       "phone": "0710125246",
       "company": "Zaruri Ventures Limited",
       "website": "https://zaruri.co.ke",
+      "image": "",
       "favorite": false,
       "createdAt": "2025-07-17T12:00:00Z"
     },
@@ -17,6 +18,7 @@
       "phone": "0723456789",
       "company": "Zaruri Ventures Limited",
       "website": "https://zaruri.co.ke",
+      "image": "",
       "favorite": false,
       "createdAt": "2025-07-17T12:00:00Z"
     },
@@ -27,6 +29,7 @@
       "phone": "0734567890",
       "company": "Zaruri Ventures Limited",
       "website": "https://zaruri.co.ke",
+      "image": "",
       "favorite": false,
       "createdAt": "2025-07-17T12:00:00Z"
     },
@@ -37,6 +40,7 @@
       "phone": "0745678901",
       "company": "Zaruri Ventures Limited",
       "website": "https://web.co.ke",
+      "image": "",
       "favorite": false,
       "createdAt": "2025-07-17T12:00:00Z"
     },
@@ -47,6 +51,7 @@
       "phone": "0756789012",
       "company": "Zaruri Ventures Limited",
       "website": "https://1532.co.ke",
+      "image": "",
       "favorite": false,
       "createdAt": "2025-07-17T12:00:00Z"
     },
@@ -57,6 +62,7 @@
       "phone": "0756789012",
       "company": "Agro Fest LTD",
       "website": "https://afl.co.ke",
+      "image": "",
       "favorite": true,
       "createdAt": "2025-07-17T12:00:00Z"
     },
@@ -67,6 +73,7 @@
       "phone": "0756789012",
       "company": "Ventures Limited",
       "website": "https://ventures.co.ke",
+      "image": "",
       "favorite": true,
       "createdAt": "2025-07-17T12:00:00Z"
     },
@@ -77,6 +84,7 @@
       "phone": "0756789012",
       "company": "ZV Limited",
       "website": "https://zv.com",
+      "image": "",
       "favorite": false,
       "createdAt": "2025-07-18T12:00:00Z"
     },
@@ -87,6 +95,7 @@
       "phone": "0798665544",
       "company": "Ventures LTD",
       "website": "https://www.extra.co.ke",
+      "image": "",
       "favorite": false,
       "createdAt": "2025-07-16T12:00:00Z"
     },
@@ -97,6 +106,7 @@
       "phone": "0123456789",
       "company": "ABC LTD",
       "website": "https://sample.co.ke",
+      "image": "",
       "favorite": false,
       "createdAt": "2025-07-17T12:01:39.100Z"
     },
@@ -107,6 +117,7 @@
       "phone": "0286538725",
       "company": "ABC LTD",
       "website": "https://sample.co.ke",
+      "image": "",
       "favorite": false,
       "createdAt": "2025-07-17T12:02:08.250Z"
     }

@@ -54,6 +54,10 @@ function renderContacts() {
 function createCard(c){
   const card = document.createElement("div");
   card.className = "contact-card";
+  const img = document.createElement("img"); 
+  img.src = c.image || "https://via.placeholder.com/80"; // fallback if no image
+  img.alt = c.name;
+  card.appendChild(img);
 
   const fav = document.createElement("button");
   fav.className = "favorite-btn";
@@ -97,6 +101,7 @@ function populateForm(c){
   form.phone.value=c.phone;
   form.company.value=c.company;
   form.website.value=c.website;
+  form.image.value = c.image;
   editingContactId=c.id;
   submitBtn.textContent="Update Contact";
 }
@@ -116,6 +121,7 @@ function handleSubmit(e){
     phone: form.phone.value.trim(),
     company: form.company.value.trim(),
     website: form.website.value.trim(),
+    image: form.image.value.trim(),
     favorite: false,
     createdAt: new Date().toISOString()//creating new javascript date object with current date and time in strring format(ISO 8601)
   };
