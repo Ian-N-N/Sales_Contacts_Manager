@@ -1,11 +1,12 @@
 #  Sales Contacts Manager Web Application
 
-> A modern, single-page **Sales Contacts Manager** built using HTML, CSS, and JavaScript, connected to a `json-server` backend for data storage and retrieval. The app allows users to **add, view, edit, and delete sales contacts** seamlessly, all in one place, without reloading the page. Fromt he page, one is also able to change the background image displayed using the `theme` button 
+> A modern, single-page **Sales Contacts Manager** built using HTML, CSS, and JavaScript, connected to a `json-server` backend for data storage and retrieval. The app enables users to **add, view, edit, and delete sales contacts** seamlessly, all in one place, without requiring page reloads. From the page, one is also able to change the background image displayed using the `theme` button and also view the contact details by clicking on the name you want to view details. 
 
 
 ##  Features
 
--  **Show Contacts**: All contacts can be loaded and viewed in a responsive 3-column card layout.
+-  **Show Contacts**: All contacts can be loaded and viewed in a responsive 3-column card layout(click on show contacts).
+-  **Show Contact Details**: viewing details of each contact in the database(click on the name you wish to see the contact details)
 -  **Add Contact**: A user-friendly form to add new contacts.
 -  **Edit Contact**: Modify an existing contact's information.
 -  **Delete Contact**: Remove a contact from the database.
